@@ -1,0 +1,73 @@
+body,html{
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100vh;
+  font-family: sans-serif;
+}
+.Section_top{
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+  background-image: url(images/image.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+  justify-content: center;
+  animation: change 10s infinite ease-in-out;
+}
+.content{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-transform: uppercase;
+
+}
+.content h1{
+  color: #fff;
+  font-size: 60px;
+  letter-spacing: 15px;
+}
+.content h1 span{
+  color: #111;
+}
+.content a{
+  background: #85c1ee;
+  padding: 10px 24px;
+  text-decoration: none;
+  font-size: 18px;
+  border-radius: 20px;
+}
+.content a:hover{
+  background: #034e88;
+  color: #fff;
+}
+@keyframes change{
+  0%
+  {
+      background-image: url("https://timesofindia.indiatimes.com/travel/destinations/sorted-your-new-year-travel-plans/articleshow/61723476.cms");
+  }
+  20%
+  {
+      background-image: url("https://i.ndtvimg.com/i/2018-01/baisakhi_650x400_41514810334.jpg");
+  }
+  40%
+  {
+      background-image: url("https://imgk.timesnownews.com/story/gateway_of_india_0.jpg");
+  }
+  60%
+  {
+      background-image: url("https://www.hlimg.com/images/stories/738X538/cover-image_1459939577m.jpg");
+  }
+  80%
+  {
+      background-image: url("https://www.easemytrip.com/travel/img/baisakhi.jpg");
+  }
+  100%
+  {
+      background-image: url("https://www.ritiriwaz.com/wp-content/uploads/2020/12/Indian-New-Year-Festivals.jpg");
+  }
+}

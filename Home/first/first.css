@@ -1,0 +1,21 @@
+.container {
+  width: 200px;
+}
+
+.dropdown {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  color: #333;
+  font-size: 14px;
+  background-size: cover;
+  background-position: right center;
+}
+
+.dropdown option {
+  background-color: #fff;
+  color: #333;
+}

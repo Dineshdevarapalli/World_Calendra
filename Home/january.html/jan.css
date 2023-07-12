@@ -1,0 +1,171 @@
+.calendar {
+  width: 300px;
+  font-family: Arial, sans-serif;
+  animation: slide-in 1s forwards;
+}
+
+.month {
+  text-align: center;
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  opacity: 0;
+  transform: translateY(-20px);
+  animation: fade-in 1s forwards;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  opacity: 0;
+  animation: fade-in 1s forwards;
+}
+
+th, td {
+  text-align: center;
+  padding: 5px;
+  border: 5px solid lightgoldenrodyellow;
+}
+
+thead th {
+  background-color: #f0f0f0;
+}
+
+tbody td {
+  background-color: #fff;
+}
+
+tbody td:hover {
+  background-color: #f9f9f9;
+}
+
+@keyframes slide-in {
+  0% {
+    opacity: 0;
+    transform: translateX(-100px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+body {
+  background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRtGuTboKmMCqLY3hlNJYtQzLUckTosF9xzcA&usqp=CAU");
+  /* height: 100%;  */
+  /* width: 100%; */
+  /* background-position: cover; */
+  /* background-repeat: no-repeat; */
+  height: 500px;
+  background-position: center;
+  background-size:cover;
+  background-repeat: no-repeat;
+  /* width: 500px; */
+  position: cover;
+  overflow: hidden;
+}
+.sai {
+  /* position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: -50px;
+  margin-left: -50px;
+  width: 100px;
+  height: 100px; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  min-height: 100vh;
+}
+
+
+
+/* drop down */
+
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-btn {
+  padding: 10px 15px;
+  background-color: #f0f0f0;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  outline: none;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  min-width: 120px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 5px 0;
+}
+
+.dropdown-content a {
+  display: block;
+  padding: 8px 16px;
+  text-decoration: none;
+  color: #333;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Tammudu+2:wght@400;800&display=swap');
+
+/* body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 20px;
+  background-color: #f2f2f2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+} */
+
+.animation-container {
+  text-align: center;
+}
+
+.animated-text {
+  font-family: 'Baloo Tammudu 2', cursive;
+  font-size: 48px;
+  animation: text-animation 2s infinite;
+}
+
+@keyframes text-animation {
+  0% {
+    letter-spacing: -10px;
+    opacity: 0;
+  }
+  50% {
+    letter-spacing: 5px;
+    opacity: 1;
+  }
+  100% {
+    letter-spacing: -10px;
+    opacity: 0;
+  }
+}
